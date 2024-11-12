@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="events.css" />
+    <!-- font-cabin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- her von mullerhof secondary font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Herr+Von+Muellerhoff&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="poo">
+        <div class="logo">
+          <a href="../restaurant-project/index.html"
+            ><img src="./pon.png" class="ss-logo"
+          /></a>
+        </div>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+      </div>
+
+      <nav class="overlay" id="overlay">
+        <ul>
+          <li><a href="../restaurant-project/index.html">HOME</a></li>
+          <li>
+            <a href="../menu card/restaurantmenu.html">MENU</a>
+          </li>
+          <li class="navitem">
+            <a href="../OUR STORY/restaurantstory.html">STORY</a>
+          </li>
+          <li class="navitem"><a href="./events.html">EVENTS</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h3 class="sprinkle-spark">EVENTS</h3>
+        <img src="./event-images/menu-star.svg" class="star" />
+        <p class="mcontent-1">
+          SS is the place to be! contact us today to inquire about hosting your
+          private event with us.
+        </p>
+      </div>
+    </header>
+    <!--  -->
+    <!--  -->
+    <div class="form-section">
+      <p class="form-c">
+        Please fill out the form below. All fields are required. An SS
+        representative will contact you to discuss your private event request.
+      </p>
+      <form id="eventForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="box" name="name" required />
+        <span class="error" id="nameError"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="box" name="email" required />
+        <span class="error" id="emailError"></span>
+
+        <label for="date">Event Date:</label>
+        <input type="date" id="date" class="box" name="date" required />
+        <span class="error" id="dateError"></span>
+
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          class="box"
+          name="phone"
+          required
+          pattern="[0-9]{10}"
+        />
+        <span class="error" id="phoneError"></span>
+
+        <label for="time">Event Time:</label>
+        <input type="time" id="time" class="box" name="time" required />
+        <span class="error" id="timeError"></span>
+
+        <label for="details">Event Details:</label>
+        <textarea id="details" class="box" name="details" required></textarea>
+        <span class="error" id="detailsError"></span>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <!--  -->
+    <footer>
+      <div class="footer-content">
+        <h6 class="about">Sprinkle Spark</h6>
+        <img src="./event-images/menu-star.svg" class="star-2" />
+        <p class="spark">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi<br />
+          quibusdam nobis dolor est rerum maiores, quaerat accusantium
+          molestiae<br />
+          illum mollitia?
+        </p>
+      </div>
+      <!-- footer-content -->
+      <div class="f-f">
+        <div class="follow-along">
+          <h6 class="follow">FOLLOW ALONG</h6>
+          <ul class="social-media-icon">
+            <li class="children">
+              <a href="#">
+                <img src="./event-images/icons8-facebook.svg" id="facebook" />
+              </a>
+            </li>
+            <li class="children">
+              <a href="#">
+                <img
+                  src="./event-images/icons8-instagram 1 - Copy.svg"
+                  id="instagram"
+                />
+              </a>
+            </li>
+            <li class="children">
+              <a href="#">
+                <img src="./event-images/icons8-pinterest.svg" id="pinterest" />
+              </a>
+            </li>
+            <li class="children">
+              <a href="#">
+                <img src="./event-images/icons8-twitter.svg" id="twitter" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--  -->
+        <div class="news-letter">
+          <h6 class="n-letter">NEWSLETTER</h6>
+          <input type="text" placeholder="your email address" class="email" />
+        </div>
+      </div>
+    </footer>
+    <!-- <p id="demo"></p> -->
+    <script src="events.js"></script>
+  </body>
+</html>

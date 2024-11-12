@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <link rel="stylesheet" href="reservation.css" />
+
+    <!-- font-cabin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- her von mullerhof secondary font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Herr+Von+Muellerhoff&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="poo">
+        <div class="logo">
+          <a href="../restaurant-project/index.html"
+            ><img src="./reserve-images/pon.png" class="ss-logo"
+          /></a>
+        </div>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+      </div>
+
+      <nav class="overlay" id="overlay">
+        <ul>
+          <li><a href="../restaurant-project/index.html">HOME</a></li>
+          <li>
+            <a href="../menu card/restaurantmenu.html">MENU</a>
+          </li>
+          <li class="navitem"><a href="../OUR STORY/restaurantstory.html">STORY</a></li>
+          <li class="navitem"><a href="../events form/events.html">EVENTS</a></li>
+        </ul>
+      </nav>
+
+      <!--  -->
+
+      <div class="reservation">
+        <h3 class="sprinkle-spark">RESERVATIONS</h3>
+        <form id="reservationForm">
+          <label>person:</label>
+          <input
+            type="number"
+            id="person"
+            name="name"
+            required
+            placeholder="person"
+          />
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required />
+
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </header>
+    <!--  -->
+
+    <!--  -->
+    <footer>
+      <div class="footer-content">
+        <h6 class="about">Sprinkle Spark</h6>
+        <img src="./reserve-images/Star 2.svg" class="star-2" />
+        <p class="spark">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi<br />
+          quibusdam nobis dolor est rerum maiores, quaerat accusantium
+          molestiae<br />
+          illum mollitia?
+        </p>
+      </div>
+      <!-- footer-content -->
+      <div class="f-f">
+        <div class="follow-along">
+          <h6 class="follow">FOLLOW ALONG</h6>
+          <ul class="social-media-icon">
+            <li class="children">
+              <a href="#">
+                <img src="./reserve-images/icons8-facebook.svg" id="facebook" />
+              </a>
+            </li>
+            <li class="children">
+              <a href="#">
+                <img
+                  src="./reserve-images/icons8-instagram 1.svg"
+                  id="instagram"
+                />
+              </a>
+            </li>
+            <li class="children">
+              <a href="#">
+                <img
+                  src="./reserve-images/icons8-pinterest.svg"
+                  id="pinterest"
+                />
+              </a>
+            </li>
+            <li class="children">
+              <a href="#">
+                <img src="./reserve-images/icons8-twitter.svg" id="twitter" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--  -->
+        <div class="news-letter">
+          <h6 class="n-letter">NEWSLETTER</h6>
+          <input type="text" placeholder="your email address" class="email" />
+        </div>
+      </div>
+    </footer>
+    <!--  -->
+    <script src="script.js"></script>
+  </body>
+</html>
